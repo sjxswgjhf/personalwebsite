@@ -33,6 +33,10 @@ const Message = mongoose.model('message', new Schema({
     },
     message: {
         type: String
+    },
+    date: {
+        type: Date,
+        default: Date.now
     }
 }));
 
