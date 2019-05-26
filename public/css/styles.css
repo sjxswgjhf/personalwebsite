@@ -3,8 +3,16 @@
     margin-bottom: 20px;
 }
 
+.messages_title{
+    color: rgb(255, 0, 85);
+    text-align: center;
+}
+
 img{
-    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
     height: auto;
 }
 
