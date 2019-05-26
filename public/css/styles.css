@@ -4,6 +4,15 @@
 }
 
 img{
-    width: 200px;
+    width: 250px;
     height: auto;
+}
+
+#homepage{
+    text-align: center;
+}
+
+.col-sm-4{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
 }
