@@ -50,8 +50,8 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-app.get('/about', (req, res) => {
-    res.render('about');
+app.get('/resume', (req, res) => {
+    res.render('resume');
 });
 
 app.get('/contact', (req, res) => {
@@ -72,7 +72,7 @@ app.post('/getMessage', (req, res) => {
 app.get('/displayMessage', (req, res) => {
     Message.find({}, (err, messages) => {
         if(err){
-            console.log(err);
+            console.log("You are not admin");
         }else{
             res.render('displayMessage', {
                 messages: messages
@@ -81,8 +81,8 @@ app.get('/displayMessage', (req, res) => {
     })
 });
 
-app.get('/portfolio', (req, res) =>{
-    res.render('portfolio');
+app.get('/gallery', (req, res) =>{
+    res.render('gallery');
 });
 
 app.listen(port, () => {
