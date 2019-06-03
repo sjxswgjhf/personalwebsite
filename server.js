@@ -69,6 +69,7 @@ app.post('/getMessage', (req, res) => {
     });
 });
 
+
 app.get('/displayMessage', (req, res) => {
     Message.find({}, (err, messages) => {
         if(err){
@@ -76,7 +77,7 @@ app.get('/displayMessage', (req, res) => {
         }else{
             res.render('displayMessage', {
                 messages: messages
-            })
+            });
         }
     })
 });
