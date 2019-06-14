@@ -240,3 +240,9 @@ transition: 0.5s all;
 #objective-section{
     margin-top: 12px; 
 }
+
+#blog{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 6px; 
+}
